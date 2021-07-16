@@ -1,0 +1,132 @@
+/* Desktop view */
+body {
+  background-color: #ebebeb;
+  color: white;
+  font-family: "Asap", sans-serif;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  min-height: 500px;
+  max-width: 1024px;
+  margin: 140px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col {
+  background-color: rgb(43, 226, 147);
+  width: 30%;
+  margin-bottom: 40px;
+}
+.col img {
+  width: 100%;
+  height: auto;
+}
+.col p {
+  font-size: 0.875rem;
+  padding: 20px 25px;
+  line-height: 1.25rem;
+}
+.col p::first-line {
+  font-weight: 700;
+}
+.header-container {
+  background-color: rgb(77, 75, 75);
+  min-height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0; /* fix at the top*/
+}
+header {
+  max-width: 1024px;
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myButton {
+  padding: 10px 25px;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 20px;
+}
+.highlight {
+  font-weight: 700;
+}
+.mob-wraper {
+  display: none;
+}
+.footer-container {
+  background-color: rgb(77, 75, 75);
+  min-height: 100px;
+}
+footer {
+  max-width: 1024px;
+  min-height: 100px;
+  margin: 0 auto;
+}
+/* Tablet view */
+@media screen and (max-width: 768px) {
+  .col {
+    width: 45%;
+  }
+  .logo {
+    padding: 40px 0;
+  }
+  nav {
+    display: none;
+  }
+  .container {
+    margin: 210px auto 0 auto;
+  }
+  .mob-wraper {
+    display: block;
+    padding-right: 30px;
+  }
+  .mob-nav {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+  }
+  .dropButton {
+    display: block;
+    background-color: coral;
+    padding: 15px 30px;
+    margin-left: -70px;
+    text-align: center;
+  }
+}
+
+/* Mobile phone view */
+@media screen and (max-width: 400px) {
+  .col {
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .col {
+    width: 45%;
+  }
+  header {
+    display: block;
+    text-align: center;
+  }
+  .logo{
+      padding:20px 0;
+  }
+  nav a {
+      display:block;
+  }
+  .myButton{
+      margin-left: 0;
+  }
+  .container {
+    margin: 210px auto 0 auto;
+
+  }
+} */
